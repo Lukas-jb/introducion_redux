@@ -1,20 +1,19 @@
+import { counter as counterTypes } from '../constants/actionTypes';
 
-import { counter as CounterTypes } from '../constants/actionTypes'
 
-
-export const incrementarContador = () => async(dispatch) => {
+export const incrementarContador = () => async (dispatch) => {
     dispatch({
-        type: CounterTypes.INCREMENTAR
+        type: counterTypes.INCREMENTAR
     })
 }
 
-export const decrementarContador = () => async(dispatch) => {
+export const decrementarContador = () => async (dispatch) => {
     dispatch({
-        type: CounterTypes.DECREMENTAR
+        type: counterTypes.DECREMENTAR
     })
 }
 
-export default{
+export default {
     incrementarContador,
-    decrementarContador,
+    decrementarContador
 }
